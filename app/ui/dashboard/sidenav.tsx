@@ -11,7 +11,7 @@ export default function SideNav() {
         href="/"
       >
         <div className="w-32 text-white md:w-40">
-          <Image src="/logo/uia-logo.png" width={120} height={120} alt="UIA Logo" className="rounded-full" />
+          <Image src="/Logo/uia-logo.png" width={120} height={120} alt="UIA Logo" className="rounded-full" />
         </div>
       </Link>
       <div className="flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2">
