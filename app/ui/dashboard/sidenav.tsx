@@ -1,26 +1,19 @@
 import Link from 'next/link';
 import NavLinks from '@/app/ui/dashboard/nav-links';
 import { PowerIcon } from '@heroicons/react/24/outline';
-import Image from 'next/image';
 
 export default function SideNav() {
   return (
     <div className="flex h-full flex-col px-3 py-4 md:px-2">
       <Link
-  className="mb-2 flex h-20 items-end justify-start rounded-md bg-blue-600 p-4 md:h-40"
-  href="/"
->
-  <div className="w-32 text-white md:w-40">
-    <Image
-      src="/logo/uia-logo.png"
-      width={300}
-      height={160}
-      className="hidden md:block object-contain w-full"
-      alt="Banner UIA"
-    />
-   </div>
-   <span className="md:hidden text-white font-bold">UIA</span>
-</Link>
+        className="mb-2 flex h-20 items-end justify-start rounded-md bg-blue-600 p-4 md:h-40"
+        href="/"
+      >
+        <div className="w-32 text-white md:w-40">
+          <span className="text-white font-bold text-2xl">UIA</span>
+        </div>
+        <span className="md:hidden text-white font-bold">UIA</span>
+      </Link>
       <div className="flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2">
         <NavLinks />
         <div className="hidden h-auto w-full grow rounded-md bg-gray-50 md:block"></div>
