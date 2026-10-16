@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import NavLinks from '@/app/ui/dashboard/nav-links';
 import { PowerIcon } from '@heroicons/react/24/outline';
+import Image from 'next/image';
 
 export default function SideNav() {
   return (
@@ -10,9 +11,8 @@ export default function SideNav() {
         href="/"
       >
         <div className="w-32 text-white md:w-40">
-          <span className="text-white font-bold text-2xl">UIA</span>
+          <Image src="/logo/uia-logo.png" width={120} height={120} alt="UIA Logo" className="rounded-full" />
         </div>
-        <span className="md:hidden text-white font-bold">UIA</span>
       </Link>
       <div className="flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2">
         <NavLinks />
